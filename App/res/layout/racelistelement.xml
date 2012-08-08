@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+     android:layout_width="match_parent" android:layout_height="wrap_content"
+     android:background="@android:color/background_dark">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="RaceName" android:id="@+id/raceElement_Name"></TextView>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1">
+        <TextView android:text="2011-08-27 09:00:00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/raceElement_startTime"></TextView>
+        <TextView android:text="-"  android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+    </LinearLayout>
+    <TextView android:text="2011-11-27 12:00:00"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/raceElement_endTime"></TextView>
+    
+</LinearLayout>

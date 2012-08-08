@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:id="@+id/layout" android:weightSum="1">
+
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView1" android:text="@string/Point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"></TextView>
+        <EditText android:inputType="number" android:hint="Point" android:layout_height="wrap_content" android:id="@+id/editTextPoint" android:layout_width="100dp"></EditText>
+    </LinearLayout>
+     
+     <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+     <TextView android:text="@string/Team" android:id="@+id/textView1" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="match_parent"></TextView>
+     <ImageButton android:id="@+id/imageButtonScan" android:layout_width="wrap_content" android:src="@drawable/qr_icon" android:layout_height="50dp"></ImageButton>
+         <EditText android:nextFocusDown="@+id/buttonOk" android:inputType="number" android:maxLength="4" android:id="@+id/editTextTeamId" android:hint="Team id" android:layout_height="wrap_content" android:layout_width="100dp" >
+             <requestFocus></requestFocus>
+         </EditText>     
+    </LinearLayout>
+     <LinearLayout  android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:weightSum="1" android:orientation="horizontal" android:layout_width="match_parent" android:baselineAligned="true">
+         <TextView android:layout_weight="1" android:text="" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+         <Button android:text="@string/Ok" android:id="@+id/buttonOk" android:layout_height="wrap_content" android:layout_width="100dp"></Button>
+         <Button  android:text="@string/Cancel" android:id="@+id/buttonCancel" android:layout_height="wrap_content" android:layout_width="100dp"></Button>
+     </LinearLayout>
+     
+     <TextView android:text="Error log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textViewErrorLog"></TextView>
+     <TextView android:text="Race log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textViewLog"></TextView>
+    
+</LinearLayout>
+ 

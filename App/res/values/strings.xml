@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, RaceLogActivity hej!</string>
+    <string name="app_name">RaceLog</string>
+    <string name="getRaceList">Get race list</string>
+    <string name="getCheckPointList">Get check point list</string>
+    <string name="Password">Password</string>
+    <string name="UserName">Username</string>
+    <string name="PhoneNr">Phone number</string>
+
+        <string name="streg"> - </string>
+        <string name="CheckPoint">Select check point</string>
+        
+    <string name="continue_label">Click below to load the URL!!</string>
+    <string name="web_button">Load the URL!!</string>
+    <string name="decode_label">Decoded URL</string>
+    <string name="scan">Scan qrcode</string>
+    <string name="scanning">Scanning</string>
+    <string name="Point">Point</string>
+    <string name="Team">Team</string>
+    <string name="EnterManually">Enter manually</string>
+    <string name="CheckPointFailed">Backup failed</string>
+    <string name="Committed">Committed</string>
+    <string name="WaitingForCommit">Waiting for commit</string>
+    <string name="SelectRace">Select a race</string>
+    
+    
+    <string name="Ok">Ok</string>
+    <string name="Cancel">Cancel</string>
+    
+    <string name="InvalidTeamId">Invalid team id</string>
+    <string name="LocalBackupError">Local backup not working</string>
+    <string name="CheckPointLoadFailed">Unable to restore race log from backup</string>
+    <string name="CheckPointSaveFailed">Unable to back up race log</string>
+    
+   <string name="CannotConnectToServer">Cannot connect to server</string>
+   <string name="InvalidServerResponse">Invalid server response</string>
+    
+   
+   
+</resources>
