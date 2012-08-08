@@ -1,0 +1,174 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+
+* {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 1em;
+}
+
+body {
+    background-color: rgb(180, 210, 250);
+}
+
+#logo {
+	position: fixed;
+	bottom: 30px;
+	left: 30px;
+	background-image: url("../images/dds_logo.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	display: block;
+	width: 473px;
+	height: 195px;
+	z-index: -1;
+}
+
+#title {
+	background-color: rgba(255, 255, 255, 0.33);
+	width: 800px;
+	margin: auto;
+	margin-bottom: 10px;
+	border: 1px solid #778fbd;
+	border-radius: 20px;
+	padding: 15px;
+	font-size: 3em;
+}
+
+#content {
+	background-color: rgba(255, 255, 255, 0.33);
+	width: 800px;
+	margin: auto;
+	border: 1px solid #778fbd;
+	border-radius: 20px;
+	padding: 15px;
+}
+
+#content .control-form {
+	display: inline-block;
+}
+
+#content .control-form input {
+	margin-right: 0px;
+}
+
+input[type=button], input[type=submit], button {
+	background-color: rgb(255, 255, 255);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.35, rgba(180,180,180,0.4)),
+		color-stop(0.68, rgba(200,200,200,0.4)),
+		color-stop(0.84, rgba(185,185,185,0.4))
+	);
+	border-radius: 20px;
+	padding: 5px 15px;
+	margin: 10px;
+	border: 1px solid rgb(99,99,99);
+}
+
+input[type=button]:active, input[type=submit]:active, button:active {
+	background-color: rgb(230, 230, 230);
+}
+
+.race {
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 20px;
+	margin: 10px;
+	padding: 10px;
+	padding-left: 20px;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.35, rgba(180,180,180,0.4)),
+		color-stop(0.68, rgba(200,200,200,0.4)),
+		color-stop(0.84, rgba(185,185,185,0.4))
+	);
+	border: 1px solid #778fbd;
+}
+
+.controls {
+	/*float: right;*/
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	/*
+	border-left: 1px solid rgba(0, 0, 0, 0.10);
+	*/
+}
+
+.controls form {
+	display: inline-block;
+	height: 100%;
+	/*
+	border-left: 1px solid rgba(255, 255, 255, 0.33);
+	border-right: 1px solid rgba(0, 0, 0, 0.10);
+	*/
+}
+.controls form:last-child {
+	border-right: 0px;
+}
+
+.controls form input[type=submit] {
+	display: block;
+	height: 100%;
+	background: transparent;
+	border: 0px;
+	margin: 0px;
+	text-shadow: 0px 1px 2px white;
+	border-radius: 0px;
+	font-weight: bold;
+}
+
+.controls form.good input[type=submit] {
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.35, rgba(59,179,59,0.5)),
+		color-stop(0.68, rgba(84,199,84,0.5)),
+		color-stop(0.84, rgba(62,189,62,0.5))
+	);
+}
+.controls form.dangerous input[type=submit] {
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.35, rgba(179,59,59,0.5)),
+		color-stop(0.68, rgba(199,84,84,0.5)),
+		color-stop(0.84, rgba(189,62,62,0.5))
+	);
+}
+
+.controls form.good input[type=submit]:active {
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.35, rgba(59,179,59,0.8)),
+		color-stop(0.68, rgba(84,199,84,0.8)),
+		color-stop(0.84, rgba(62,189,62,0.8))
+	);
+}
+.controls form.dangerous input[type=submit]:active {
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.35, rgba(179,59,59,0.8)),
+		color-stop(0.68, rgba(199,84,84,0.8)),
+		color-stop(0.84, rgba(189,62,62,0.8))
+	);
+}
+
+.controls form:last-child input[type=submit] {
+	border-top-right-radius: 19px;
+	border-bottom-right-radius: 19px;
+}
+
+
+
+

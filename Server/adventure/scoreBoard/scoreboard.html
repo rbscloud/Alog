@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Untitled 1</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="../style/scoreboard.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript"
+    src="http://maps.googleapis.com/maps/api/js?sensor=false">
+</script>
+<script type="text/javascript">
+	function timedRefresh(timeoutPeriod) {
+		setTimeout("location.reload(true);",timeoutPeriod);
+	}
+        
+        // Create an object containing LatLng, population.
+        var citymap = {};
+        citymap['post1'] = {
+          center: new google.maps.LatLng(56.354599,8.617744),
+          population: 28
+        };
+        citymap['post2'] = {
+          center: new google.maps.LatLng(56.334431,8.570194),
+          population: 81
+        };
+        citymap['post3'] = {
+          center: new google.maps.LatLng(56.335168,8.630276),
+          population: 38
+        }
+        var cityCircle;
+	
+	function initialize() {
+		var latlng = new google.maps.LatLng(56.325866,8.541527);
+		var myOptions = {
+			zoom: 12,
+			center: latlng,
+			disableDefaultUI: true,
+			mapTypeId: google.maps.MapTypeId.HYBRID
+		};
+		var map = new google.maps.Map(document.getElementById("map_canvas"),
+			myOptions);
+                        
+                for (var city in citymap) {
+                    // Construct the circle for each value in citymap.
+                    var populationOptions = {
+                      strokeColor: "#FF0000",
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: "#FF0000",
+                      fillOpacity: 0.35,
+                      map: map,
+                      center: citymap[city].center,
+                      radius: citymap[city].population*10
+                    };
+                    cityCircle = new google.maps.Circle(populationOptions);
+                }
+                
+		timedRefresh(15000);
+	}
+
+</script>
+
+</head>
+
+<body onload="initialize()">
+
+<div id="masthead">
+	<div id="logo" style="width: 249px">
+		<img alt="" height="100" src="../images/DDS_logo_positivt_473x195.png" width="243" /></div>
+	<div id="header">
+		MEGA - PLAT</div>
+</div>
+<div id="container">
+	<div id="high_score">
+		<div id="teams">
+			<marquee  behavior="slide" direction="up" scrollamount="20" height="700" loop="1">
+				<div class="team">
+					Holdnavn: Hej7
+	   			</div>
+	   			<div class="team">
+					Holdnavn: Hej6
+	   			</div>
+	   			<div class="team">
+					Holdnavn: Hej5
+	   			</div>
+				<div class="team">
+					Holdnavn: Hej4
+	   			</div>
+				<div class="team">
+					Holdnavn: Hej3
+	   			</div>
+				<div class="team">
+					Holdnavn: Hej2
+	   			</div>
+
+				<div class="team">
+					Holdnavn: Hej1
+	   			</div></marquee>
+  		</div>
+	</div>
+	<div id="map_canvas">
+	</div>
+</div>
+</body>
+
+</html>
